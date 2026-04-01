@@ -547,8 +547,7 @@ assigned to <tt>core0</tt> and <tt>mytarget_cm0.out</tt> is assigned to <tt>core
 <tr><td>rtt</td>
 <td>YAML Node</td>
 <td><i>No default</i></td>
-<td><p>Configuration for <a href="https://www.segger.com/products/debug-probes/j-link/technology/about-real-time-transfer/">SEGGER RTT</a>
-</p>
+<td><p>Configuration for <a href="https://www.segger.com/products/debug-probes/j-link/technology/about-real-time-transfer/">SEGGER RTT</a></p>
 <pre>
 rtt:
   - pname:         # [optional] Processor identifier (required for multicore devices).
@@ -567,9 +566,9 @@ rtt:
 </pre>
 <p>Example:</p>
 <ul>
-<li>Command line:<br>
+<li>Command line:<br/>
 <tt>-O rtt="[{control-block: {address: 0x20000000, size: 0x00020000}, channel: [{number: 0, mode: stdio}, {number: 1, mode: systemview}]}]"</tt></li>
-<li>Config file:<br>
+<li>Config file:<br/>
 <pre>rtt:
   - control-block:
       address: 0x20000000
@@ -578,7 +577,8 @@ rtt:
       - number: 0
         mode: stdio
       - number: 1
-        mode: systemview</pre></li>
+        mode: systemview
+</pre></li></ul></td></tr>
 
 <tr><td>systemview_file</td>
 <td>str</td>
